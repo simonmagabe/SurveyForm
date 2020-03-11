@@ -194,7 +194,14 @@ footer {
 	color: #d1f3fc;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+	body {
+		font-size: 12px;
+	}
+
+	.container {
+		width: 100%;
+	}
 
 	#survey-form .row {
 		width: 90%;
@@ -218,10 +225,61 @@ footer {
 	.submit #submit {
 		width: 70px;
 	}
+
+	#name,
+	#email,
+	#age {
+		font-size: 12px;
+	}
+
+	#preference,
+	#dropdown {
+		font-size: 12px;
+	}
 }
 
-@media(max-width: 500px) {
+@media(max-width: 700px) {
+	body {
+		font-size: 10px;
+	}
+
+	#sub-title {
+		font-weight: bold;
+	}
+
 	.container-fluid {
 		width: 100%;
+	}
+
+	#name,
+	#email,
+	#age {
+		font-size: 10px;
+	}
+
+	#preference,
+	#dropdown {
+		font-size: 10px;
+	}
+}
+
+@media(max-width: 350px) {
+	body {
+		font-size: 10px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.container-fluid {
+		width: 100%;
+	}
+
+	#name,
+	#email,
+	#age {
+		width: 100%;
+		font-size: 10px;
 	}
 }
