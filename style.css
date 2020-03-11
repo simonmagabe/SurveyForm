@@ -173,6 +173,7 @@ textarea:hover {
 }
 
 .submit #submit {
+	cursor: pointer;
 	padding: 10px 5px;
 	width: 100px;
 	font-size: 1.2em;
@@ -180,6 +181,11 @@ textarea:hover {
 	border-radius: 4px;
 	align-items: center;
 	background: #33d2fa;
+}
+
+.submit #submit:hover {
+	opacity: 0.8;
+	font-weight: bold;
 }
 
 footer {
