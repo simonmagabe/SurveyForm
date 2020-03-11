@@ -3,3 +3,212 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	width: 100%;
+	background: #333333f3;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 14px;
+}
+
+.container {
+	width: 90%;
+	max-width: 1500px;
+	margin: auto;
+	background: #423e3e;
+	padding: 30px;
+	border: none;
+	border-radius: 4px;
+	border-left: 1px solid rgb(8, 8, 8);
+	border-right: 1px solid rgb(7, 7, 7);
+}
+
+header {
+	width: 70%;
+	max-width: 900px;
+	margin: auto;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	margin: 20px auto;
+	padding: 10px;
+}
+
+.container-fluid {
+	width: 70%;
+	max-width: 900px;
+	background: #fff;
+	border: 2px solid;
+	margin: auto auto 50px;
+	border: none;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	bottom: 0;
+}
+
+#sub-title {
+	display: flex;
+	justify-content: center;
+	color: rgb(7, 7, 7);
+	margin: 20px auto;
+	font-size: 1.5em;
+	padding: 5px;
+}
+
+#survey-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.container-fluid .row {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	padding: 10px 0;
+	gap: 20px;
+}
+
+.container-fluid .row.recommendation,
+.container-fluid .row.improvements,
+.container-fluid .row.comment {
+	align-items: initial;
+}
+
+.column.left label {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10px;
+	flex-wrap: wrap;
+}
+
+.column i {
+	color: #f80b0b;
+}
+
+#preference,
+#dropdown {
+	padding: 8px 4px;
+	width: 160px;
+	border: #33d2fa solid 1px;
+	border-radius: 2px;
+}
+
+#dropdown:hover,
+#preference:hover {
+	cursor: pointer;
+	background: #d1f3fc;
+	font-weight: bold;
+}
+
+.row input {
+	padding: 10px 5px;
+	border: #33d2fa solid 1px;
+	border-radius: 2px;
+}
+
+#name,
+#email,
+#age {
+	width: 90%;
+}
+
+#name:hover,
+#email:hover,
+#age:hover {
+	background: #d1f3fc;
+}
+
+textarea#comments {
+	width: 90%;
+	min-height: 50%;
+	border: #33d2fa solid 1px;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+textarea:hover {
+	background: #d1f3fc;
+}
+
+.selection label {
+	line-height: 3;
+}
+
+.selection input:hover {
+	cursor: pointer;
+}
+
+.selection:hover label {
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+.column.right .selection {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.column.right .selection input {
+	margin-right: 10px;
+}
+
+.submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.submit #submit {
+	padding: 10px 5px;
+	width: 100px;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 4px;
+	align-items: center;
+	background: #33d2fa;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 900px) {
+
+	#survey-form .row {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0;
+		justify-content: flex-start;
+		align-items: initial;
+		margin: auto;
+	}
+
+	.column.left label {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.row input {
+		width: fit-content;
+	}
+
+	.submit #submit {
+		width: 70px;
+	}
+}
