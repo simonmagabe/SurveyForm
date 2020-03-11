@@ -213,6 +213,10 @@ footer {
 		margin: auto;
 	}
 
+	.column {
+		margin-bottom: 5px;
+	}
+
 	.column.left label {
 		display: flex;
 		justify-content: flex-start;
