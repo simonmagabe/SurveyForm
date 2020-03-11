@@ -185,6 +185,7 @@ textarea:hover {
 footer {
 	display: flex;
 	justify-content: center;
+	color: #d1f3fc;
 }
 
 @media (max-width: 900px) {
@@ -210,5 +211,11 @@ footer {
 
 	.submit #submit {
 		width: 70px;
+	}
+}
+
+@media(max-width: 500px) {
+	.container-fluid {
+		width: 100%;
 	}
 }
